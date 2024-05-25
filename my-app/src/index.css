@@ -1,0 +1,46 @@
+.none{
+    display: none;
+    width: 0;
+}
+
+.error{
+    animation: alertPop .5s 0s ;
+    opacity: 1;
+}
+
+.pop{
+    opacity: 0;
+}
+
+.playBtn{
+    transition: .5s;
+}
+
+.playBtn:hover{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+@keyframes alertPop {
+    0%{
+        /* opacity: 0; */
+        transform: translatex(-3px);
+    }
+    25%{
+        /* opacity:1; */
+        transform: translatex(3px);
+
+    }
+    50%{
+        transform: translatex(-3px);
+        /* opacity:0; */
+    }
+    75%{
+        transform: translatex(3px);
+        /* opacity:0; */
+    }
+    100%{
+        transform: translatex(-3px);
+        /* opacity:0; */
+    }
+}
